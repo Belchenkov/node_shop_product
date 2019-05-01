@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 5000;
 
 app.use('/admin', adminRoutes);
-app.use('/shop', shopRoutes);
+app.use(shopRoutes);
 
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
