@@ -12,6 +12,8 @@ const shopRoutes = require('./routes/shop');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 const PORT = process.env.PORT || 5000;
 
 app.use('/admin', adminRoutes);
