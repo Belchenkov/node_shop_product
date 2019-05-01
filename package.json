@@ -1,0 +1,30 @@
+{
+  "name": "node_shop",
+  "version": "1.0.0",
+  "description": "Create a Product Shop on Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belchenkov/node_shop_product.git"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "Aleksey Belchenkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Belchenkov/node_shop_product/issues"
+  },
+  "homepage": "https://github.com/Belchenkov/node_shop_product#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
