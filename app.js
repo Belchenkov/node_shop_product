@@ -22,6 +22,11 @@ app.get('/', (req, res) => {
 app.use('/admin', adminRoutes);
 app.use('/shop', shopRoutes);
 
+app.use((req, res) => {
+    res.status(404).send('<h1>Page Not Found</h1>')
+});
+
+// Run Server
 app.listen(PORT, () => {
     console.log(`Server running on 127.0.0.1:${PORT}`);
 });
